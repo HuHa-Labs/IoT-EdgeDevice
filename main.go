@@ -4,5 +4,9 @@ import "fmt"
 
 func main() {
 	fmt.Println("Hello IoT Edge device")
-	fmt.Println(string(GetIotData()))
+	i := 100
+	for i > 0 {
+		i--
+		fmt.Println(string(GetIotData()))
+	}
 }
